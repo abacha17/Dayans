@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dayans Luxe | Fashion & Lifestyle</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#4b1d6b,#7b2cbf);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ffd700;
+    color:#222;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+nav{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#4b1d6b;
+    font-weight:600;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#4b1d6b;
+    font-size:2rem;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#4b1d6b;
+    margin-bottom:10px;
+}
+
+.features{
+    background:#f4ecff;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.feature-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#4b1d6b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dayans Elegance</h1>
+    <p>
+        Elevating everyday style with premium fashion, bags, and essentials
+        designed for modern women, men, and young trendsetters.
+    </p>
+    <a href="#products" class="btn">Shop Collection</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Dayans Elegance</h2>
+    <div class="about">
+        <p>
+            Discover a curated collection of high-quality essentials for modern
+            women, ladies, girls, men, and young boys. From buttery-soft biker
+            shorts, chic bras, panties and boxers to travel bags, school bags,
+            laptop bags and stylish sling bags, Dayans Luxe combines comfort,
+            elegance and functionality in every product.
+        </p>
+    </div>
+</section>
+
+<section id="products">
+    <h2 class="section-title">Our Collection</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="">
+            <div class="card-content">
+                <h3>Biker Shorts</h3>
+                <p>Comfortable, stylish and perfect for workouts or casual wear.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800" alt="">
+            <div class="card-content">
+                <h3>Lingerie & Boxers</h3>
+                <p>Designed for confidence, comfort and everyday elegance.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800" alt="">
+            <div class="card-content">
+                <h3>Travel Bags</h3>
+                <p>Durable and spacious bags for your journeys and adventures.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="">
+            <div class="card-content">
+                <h3>Laptop & School Bags</h3>
+                <p>Practical, secure and fashionable for work and study.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="features" id="features">
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-box">
+            <h3>✨ Premium Quality</h3>
+            <p>Carefully selected products designed for durability and style.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>💜 Affordable Luxury</h3>
+            <p>Elegant products at prices that fit your budget.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🚚 Reliable Delivery</h3>
+            <p>Fast and dependable service for every order.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p>📱 WhatsApp: +254 793 623 177</p>
+    <p>📱 Call: +254 793 623 177</p>
+    <p>📍 Kenya</p>
+    <p>📧 dayanselegance@gmail.com</p>
+
+    <a href="https://wa.me/254793623177" class="btn">
+        Order on WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Dayans Elegance. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254793623177">
+    💬
+</a>
+
+</body>
+</html>
